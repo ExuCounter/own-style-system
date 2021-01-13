@@ -1,10 +1,10 @@
 import { Sidebar } from './layout/Sidebar'
 import { ThemeProvider } from 'styled-components'
-import theme from '../theme'
+import { defaultTheme } from '../theme'
 
 export const Index = () => {
   return (
-    <ThemeProvider theme={theme}>
+    <ThemeProvider theme={defaultTheme}>
       <Sidebar></Sidebar>
     </ThemeProvider>
   )

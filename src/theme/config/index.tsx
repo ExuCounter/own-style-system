@@ -1,4 +1,4 @@
-import { BoxTheme } from '../components/Box'
+import { BoxTheme } from '../components/box'
 
 export default {
   BoxTheme,
