@@ -1,4 +1,5 @@
 import { ThemeInterface } from '../types'
+import { ThemeComponents } from '../config'
 
 const colors = {
   alpha: {
@@ -21,4 +22,5 @@ export const theme: ThemeInterface = {
   colors,
   fontSizes,
   fontWeights: [300, 400, 500, 600, 700],
+  components: ThemeComponents,
 }

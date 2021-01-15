@@ -1,4 +1,6 @@
 import * as CSS from 'csstype'
+import { BoxThemeInterface } from '../components/box'
+
 type Color = CSS.Property.Color
 type FontWeightsType = (300 | 400 | 500 | 600 | 700)[]
 
@@ -28,8 +30,13 @@ export interface FontSizesType {
   [s: string]: string
 }
 
+export interface ComponentsInterface {
+  box?: BoxThemeInterface
+}
+
 export interface ThemeInterface {
   colors: ColorsInterface
   fontWeights: FontWeightsType
   fontSizes: FontSizesType
+  components: ComponentsInterface
 }

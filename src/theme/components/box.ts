@@ -1,4 +1,4 @@
-type BoxThemeInterface = {
+export type BoxThemeInterface = {
   bg: string
   danger: {
     bg: string
