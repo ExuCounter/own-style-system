@@ -1,9 +1,10 @@
-import config from '../config'
 import { Theme } from 'styled-system'
+import { themeGet } from '@styled-system/theme-get'
+import { ThemeComponents } from '../config'
 
-type Get = {
-  path: string
+export const getThemeColor = (path: string, fallback?: string) => (
   theme: Theme
+) => {
+  const value = ThemeComponents[path] || fallback || null
+  return themeGet(`components.${path}`, value)({ theme })
 }
-
-export const getThemeColor = ({ path, theme }: Get) => {}
