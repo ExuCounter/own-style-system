@@ -1,5 +1,6 @@
 import BoxDemo from '../components/BoxDemo'
 import SelectDemo from '../components/SelectDemo'
+import { DaterangeDemo } from '../components/DaterangeDemo'
 import { Switch, Route } from 'react-router-dom'
 import styled from 'styled-components'
 
@@ -16,6 +17,7 @@ export const Content = () => {
       <Switch>
         <Route path="/box" component={BoxDemo} exact />
         <Route path="/select" component={SelectDemo} exact />
+        <Route path="/daterange" component={DaterangeDemo} exact />
       </Switch>
     </Wrapper>
   )

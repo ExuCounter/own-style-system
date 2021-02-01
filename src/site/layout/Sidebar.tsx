@@ -20,6 +20,7 @@ export const Sidebar = () => {
     <SidebarWrapper>
       <Link to="/box">Box</Link>
       <Link to="/select">Select</Link>
+      <Link to="/daterange">Daterange</Link>
     </SidebarWrapper>
   )
 }
